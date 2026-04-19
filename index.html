@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRAGMATA | Lunar Protocol</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="#hero" class="logo">PRAGMATA<span>//</span></a>
+            <nav class="main-nav" id="mainNav">
+                <ul>
+                    <li><a href="#hero">Início</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#personagens">Personagens</a></li>
+                    <li><a href="#lugares">Locais</a></li>
+                    <li><a href="#trailer">Trailer</a></li>
+                    <li><a href="#disponibilidade">Disponibilidade</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger" id="hamburger" aria-label="Abrir menu">
+                <span></span><span></span><span></span>
+            </button>
+            <button id="musicToggle" class="music-toggle">🔊</button>
+            <button id="themeToggle" class="theme-toggle">🌙</button>
+        </div>
+    </header>
+
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <h1>PRAGMATA</h1>
+            <p>A Terra já não é mais a nossa casa.</p>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h2>01. Sobre o jogo</h2>
+        <p>Pragmata é um jogo de ação e aventura com elementos de ficção científica da Capcom. Acompanhe Hugh, membro de uma arruinada equipe de investigação, e Diana, um androide, enquanto exploram uma instalação lunar controlada por uma IA rebelde e tentam voltar à Terra.
+ximo da tecnologia da próxima geração para criar uma imersão nunca antes vista em ambientes espaciais.</p>
+    </section>
+
+    <section class="personagens" id="personagens">
+        <h2>02. Arquivo de Pessoal</h2>
+        <div class="grid">
+            <div class="card" data-synopsis="Um explorador altamente treinado equipado com um traje de EVA (Atividade Extraveicular) de última geração. Ele é o protetor da misteriosa garota.">
+                <img src="astronauta_render.png" alt="O Astronauta">
+                <h3>O Astronauta</h3>
+            </div>
+            <div class="card" data-synopsis="Uma garota com origens desconhecidas. Ela possui a habilidade de ver e interagir com interfaces digitais no mundo real e não parece precisar de oxigênio na Lua.">
+                <img src="garota_render.png" alt="Diana">
+                <h3>A Garota</h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="sinopse" id="sinopse">
+        <h2>Sinopse</h2>
+        <p>Em uma Lua colonizada e agora isolada, um herói improvável deve escoltar uma criança misteriosa através de cenários que desafiam as leis da física. Juntos, eles precisam descobrir a verdade por trás da "Liberdade" e o que aconteceu com a civilização terrestre enquanto enfrentam anomalias digitais e mecânicas.</p>
+    </section>
+
+    <section class="lugares" id="lugares">
+        <h2>03. Setores Lunares</h2>
+        <div class="grid">
+            <div>
+                <img src="lunar_base.jpg" alt="Base Lunar">
+                <h1>Base de Tranquilidade</h1>
+                <p>O último reduto da tecnologia humana na superfície da Lua.</p>
+            </div>
+            <div>
+                <img src="empty_earth.jpg" alt="Terra Vazia">
+                <h1>Horizonte da Terra</h1>
+                <p>A vista melancólica do nosso antigo planeta, agora envolto em um silêncio digital.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="trailer" id="trailer">
+        <h2>04. Transmissão de Vídeo</h2>
+        <div class="video-wrapper">
+            <iframe class="responsive-iframe" src="https://www.youtube.com/embed/xoxCbo8X_n8" title="Pragmata Trailer" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <div id="disponibilidade" class="plataformas">
+        <h2>Plataformas Suportadas</h2>
+        <div class="plataformas-grid">
+            <div class="plataforma">
+                <span>PlayStation 5</span>
+            </div>
+            <div class="plataforma">
+                <span>Xbox Series X/S</span>
+            </div>
+            <div class="plataforma">
+                <span>Steam (PC)</span>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        © 2026 PRAGMATA - Protocolo de Exploração Lunar <br>
+        Inspirado no projeto de <a href="#">Thalyson Jose</a>.
+    </footer>
+
+    <div id="charModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h3 id="modalTitle"></h3>
+            <p id="modalText"></p>
+        </div>
+    </div>
+
+    <audio id="bgMusic" loop src="audio/pragmata_theme.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
