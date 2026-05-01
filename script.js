@@ -102,7 +102,7 @@ document.addEventListener("DOMContentLoaded", () => {
     /* ================================
        Scroll Reveal Animation
     =================================*/
-    const revealTargets = $$("section, .card, .plataforma, #curiosidades li");
+    const revealTargets = $$("section, .card, .plataforma, .cabin-character, #curiosidades li");
 
     if ("IntersectionObserver" in window) {
         const observer = new IntersectionObserver((entries) => {
@@ -116,32 +116,6 @@ document.addEventListener("DOMContentLoaded", () => {
         revealTargets.forEach(el => {
             el.classList.add("reveal");
             observer.observe(el);
-        });
-    }
-
-    /* ================================
-       Background Music
-    =================================*/
-    const bgMusic = document.getElementById('bgMusic');
-    const musicToggle = document.getElementById('musicToggle');
-
-    if (bgMusic && musicToggle) {
-        const updateIcon = () => {
-            musicToggle.textContent = bgMusic.paused ? "🔊" : "🔈";
-        };
-
-        musicToggle.addEventListener('click', () => {
-            if (bgMusic.paused) {
-                bgMusic.play().catch(e => console.log("Audio play blocked"));
-            } else {
-                bgMusic.pause();
-            }
-            updateIcon();
-        });
-
-        document.addEventListener('visibilitychange', () => {
-            if (document.hidden) bgMusic.pause();
-            updateIcon();
         });
     }
 
