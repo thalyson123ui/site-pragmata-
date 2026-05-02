@@ -126,4 +126,15 @@ document.addEventListener("DOMContentLoaded", () => {
     if (heroContent) {
         setTimeout(() => heroContent.classList.add("in-view"), 300);
     }
+
+    // ===== CABIN BOOT =====
+setTimeout(() => {
+    const boot = document.getElementById("bootText");
+    const face = document.getElementById("cabinFace");
+
+    if (boot && face) {
+        boot.style.display = "none";
+        face.classList.remove("hidden");
+    }
+}, 3000);
 });
